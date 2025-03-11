@@ -1,0 +1,125 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 700px; 
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.8rem; 
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  margin-top: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.reset-btn {
+  background-color: #dc3545;
+}
+
+.reset-btn:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.button-group button {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.button-group .reset-btn {
+  background-color: #dc3545;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .file-name {
+    display: block;
+    margin-top: 12px;
+  }
+
+  .button-group button {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 6px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Responsive Design for Tablet and larger (from 601px to larger screens like PC) */
+@media (min-width: 601px) {
+  .container {
+    width: 85%;
+    min-width: 600px;
+    padding: 35px;
+  }
+
+  .button-group button {
+    width: 48%;
+    margin-bottom: 15px;
+  }
+
+  .button-group {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .results {
+    padding: 25px;
+  }
+
+  .results p {
+    padding: 15px;
+  }
+}

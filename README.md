@@ -1,46 +1,141 @@
-# Getting Started with Create React App
+# TondeuseSimulator 🚜
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TondeuseSimulator est une application web développée avec **React** et **TypeScript**, qui permet de simuler le déplacement de tondeuses sur une pelouse en fonction d'instructions prédéfinies dans un fichier.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📌 **Fonctionnalités**
 
-### `npm start`
+- 📂 **Upload de fichier** : Importer un fichier texte contenant les instructions.
+- 🎬 **Lancer la simulation** : Exécuter les instructions pour voir le déplacement des tondeuses.
+- 🔄 **Réinitialisation** : Effacer les résultats et le fichier sélectionné.
+- ✅ **Test unitaire** : Vérification du bon fonctionnement avec Jest & React Testing Library.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🚀 **Installation et Exécution**
 
-### `npm test`
+### 📥 **1. Cloner le projet**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```sh
+git clone https://github.com/ton-profil/TondeuseSimulator.git
+cd TondeuseSimulator
+```
 
-### `npm run build`
+### 📦 **2. Installer les dépendances**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```sh
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### ▶️ **3. Lancer l'application en mode développement**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+npm run dev
+```
 
-### `npm run eject`
+🔹 L'application sera accessible à **http://localhost:5173/** (si tu utilises Vite).
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 🏗 **4. Construire le projet pour la production**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```sh
+npm run build
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Les fichiers seront générés dans le dossier **dist/**.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### 🧪 **5. Lancer les tests unitaires**
 
-## Learn More
+```sh
+npm run test
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📂 **Structure du projet**
+
+```
+TondeuseSimulator/
+│── src/
+│   ├── components/       # Composants réutilisables
+│   │   ├── FileUpload/   # Upload de fichier
+│   │   ├── MowerResults/ # Résultats de la simulation
+│   ├── services/         # Logique métier (simulation des tondeuses)
+│   ├── tests/            # Tests unitaires
+│   ├── App.tsx           # Composant principal
+│   ├── TondeuseSimulator.tsx # Simulation des tondeuses
+│── public/               # Assets statiques
+│── dist/                 # Fichiers de build (prod)
+│── package.json          # Dépendances et scripts
+│── tsconfig.json         # Configuration TypeScript
+│── vite.config.ts        # Configuration Vite
+│── README.md             # Documentation
+```
+
+---
+
+## 🌍 **Déploiement**
+
+### **Sur Vercel**
+
+1. Créer un compte sur [Vercel](https://vercel.com/).
+2. Importer le projet depuis GitHub.
+3. Définir les paramètres :
+   - **Build Command** : `npm run build`
+   - **Output Directory** : `dist`
+4. Déployer 🚀
+
+Ou utiliser la CLI :
+
+```sh
+npm install -g vercel
+vercel
+```
+
+### **Sur Netlify**
+
+1. Créer un compte sur [Netlify](https://www.netlify.com/).
+2. Importer le projet depuis GitHub.
+3. Définir les paramètres :
+   - **Build Command** : `npm run build`
+   - **Publish Directory** : `dist`
+4. Déployer 🚀
+
+Ou utiliser la CLI :
+
+```sh
+npm install -g netlify-cli
+netlify deploy
+```
+
+---
+
+## 🛠 **Technologies utilisées**
+
+- **React** (Vite)
+- **TypeScript**
+- **Jest + React Testing Library** (Tests unitaires)
+- **Vercel / Netlify** (Déploiement)
+- **CSS Modules** (Styles)
+
+---
+
+## 📌 **Améliorations possibles**
+
+- 🖼 Interface utilisateur améliorée avec animations.
+- 📊 Ajout d'une visualisation graphique des déplacements.
+- 💾 Sauvegarde des simulations.
+
+---
+
+## 👨‍💻 **Auteur**
+
+📌 Développé par **[Ryma NaitAmara]**
+
+💡 Inspiré du défi de simulation de tondeuse !
+
+🔗 [GitHub](https://github.com/ton-profil/TondeuseSimulator)
+
+---
+
+🔥 **Merci d'utiliser TondeuseSimulator !** 🚜
