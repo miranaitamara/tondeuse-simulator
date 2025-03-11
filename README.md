@@ -112,7 +112,7 @@ netlify deploy
 
 ## 🛠 **Technologies utilisées**
 
-- **React** (Vite)
+- **React**
 - **TypeScript**
 - **Jest + React Testing Library** (Tests unitaires)
 - **Vercel / Netlify** (Déploiement)
