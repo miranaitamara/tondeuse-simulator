@@ -18,8 +18,8 @@ TondeuseSimulator est une application web développée avec **React** et **TypeS
 ### 📥 **1. Cloner le projet**
 
 ```sh
-git clone https://github.com/ton-profil/TondeuseSimulator.git
-cd TondeuseSimulator
+git clone https://github.com/miranaitamara/tondeuse-simulator.git
+cd tondeuse-simulator
 ```
 
 ### 📦 **2. Installer les dépendances**
@@ -28,13 +28,13 @@ cd TondeuseSimulator
 npm install
 ```
 
-### ▶️ **3. Lancer l'application en mode développement**
+### ▶️ **3. Lancer l'application**
 
 ```sh
-npm run dev
+npm run start
 ```
 
-🔹 L'application sera accessible à **http://localhost:5173/** (si tu utilises Vite).
+🔹 L'application sera accessible à **http://localhost:3000/**.
 
 ### 🏗 **4. Construire le projet pour la production**
 
@@ -134,7 +134,7 @@ netlify deploy
 
 💡 Inspiré du défi de simulation de tondeuse !
 
-🔗 [GitHub](https://github.com/ton-profil/TondeuseSimulator)
+🔗 [GitHub](https://github.com/miranaitamara/tondeuse-simulator)
 
 ---
 
